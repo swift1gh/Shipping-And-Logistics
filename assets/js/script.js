@@ -44,3 +44,61 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+
+//FIREBASE AUTHENTICATION
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDKPQgjZErpjzntQIQ8iGbLxiSGeHEuhsw",
+  authDomain: "taigaship.firebaseapp.com",
+  databaseURL: "https://taigaship-default-rtdb.firebaseio.com",
+  projectId: "taigaship",
+  storageBucket: "taigaship.appspot.com",
+  messagingSenderId: "241770946625",
+  appId: "1:241770946625:web:5898d708e9590776ea66c0"
+};
+
+const auth = getAuth(firebaseApp);
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+// Registration
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
