@@ -159,11 +159,13 @@ body {
   padding-inline: 15px; 
 }
 
-.section { padding-block: var(--section-padding); }
-
-.h1,
-.h2,
-.h3 {
+.section { 
+  padding-block: var(--section-padding); 
+}
+.login-session{
+  padding-block: 0;
+}
+.h1,.h2,.h3 {
   font-family: var(--ff-oswald);
   line-height: 1.2;
   font-weight: var(--fw-600);
