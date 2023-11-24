@@ -1,10 +1,10 @@
-Transportio - To every direction
+TaigaShip - To every direction
 
 
 
 #---------- HEADER ----------#
 
-Transportio
+TaigaShip
 
 aria-label = Clsoe menu
 <ion-icon name="close-outline"></ion-icon>
@@ -216,7 +216,7 @@ Subscribe Now
 
 #---------- FOOTER ----------#
 
-Transportio
+TaigaShip
 
 Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
 
@@ -249,7 +249,7 @@ Track Your Shipment
 Privacy Policy
 Terms & Condition
 
-&copy; 2022 Transportio. All Rights Reserved by codewithsadee
+&copy; 2022 TaigaShip. All Rights Reserved by codewithsadee
 
 
 

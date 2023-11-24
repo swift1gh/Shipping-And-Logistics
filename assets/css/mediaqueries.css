@@ -13,18 +13,18 @@
       margin-inline-start: auto;
   }
   
-  .header .contact-label {
+  .header .email-label {
       text-transform: uppercase;
       font-size: var(--fs-9);
   }
   
-  .header .contact-number {
+  .header .email_address {
       font-size: var(--fs-6);
       font-weight: var(--fw-600);
       letter-spacing: 1px;
   }
   
-  .header .contact-icon {
+  .header .email-icon {
     font-size: 35px;
     opacity: 0.6;
   }
@@ -300,7 +300,9 @@
   
     .h1 { --fs-3: 12rem; }
   
-    .header .contact-number { --fs-6: 3rem; }
+    .header .email_address { 
+      --fs-6:  2.5rem; 
+    }
     .hero {
       padding-block-start: 150px;
       background-position: left;
@@ -323,4 +325,44 @@
     .footer-top { padding-block: 60px; }
   
   }
+
+
+
+
+
+
+/*SHIPMENT*/
+@media only screen and (min-width: 798px) and (max-width: 1100px) {
+  .shipment-details-section .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .shipment-details-section .container {
+    width: 70%;
+    transform: translateX(20px);
+  }
+
+}
+@media only screen and (max-width: 550px) {
+  .shipment-details-section .container {
+    width: 80%;
+  }
+
+  .shipment-details-section .container ul::after {
+    left: -20px;
+  }
+
+  .shipment-details-section .container ul li .circle {
+    left: -20px;
+  }
+}
+
+
+
+
+
+
+
   

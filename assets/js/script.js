@@ -47,6 +47,16 @@ window.addEventListener("scroll", function () {
 
 
 
+// Scroll to the section when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+  const shipmentDetailsSection = document.getElementById('shipmentDetailsSection');
+
+  if (shipmentDetailsSection) {
+    shipmentDetailsSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+});
 
 
 
