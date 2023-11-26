@@ -960,5 +960,79 @@ border-radius: 25%;
 
 
 
+/*-----------------------------------*\
+  #ABOUT (LEARN MORE)
+\*-----------------------------------*/
+
+.about_banner{
+  min-height: 40vh;
+}
+.about-us-head-text{
+  font-size: 7rem;
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: -5px -8px 4px rgba(0, 0, 0, 0.5);
+}
+.about-text-1{
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  text-align: center;
+  background-color: rgb(135 117 117 / 12%);
+}
+.about-text-1 div h2 {
+  font-size: 4rem;
+}
+.about-text-2{
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-up{
+  display: flex;
+  gap: 2rem;
+}
+.about-left{
+  padding: 4rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.about-right{
+  padding: 4rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.about-down{
+  padding: 5rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  margin: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
