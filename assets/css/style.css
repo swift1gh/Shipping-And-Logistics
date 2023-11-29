@@ -645,6 +645,11 @@ border-radius: 25%;
 
 .service-card:is(:hover, :focus-within) { border-color: var(--dark-orange); }
 
+.card2{
+  display: flex;
+  gap: 4rem;
+}
+
 .service-card .card-icon { margin-block-end: 30px; }
 
 .service-card .card-title .span {
@@ -1026,9 +1031,70 @@ border-radius: 25%;
 
 
 
+/*-----------------------------------*\
+  AIR FREIGHT
+\*-----------------------------------*/
 
+.airfreight-banner{
+  height: 500px;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
 
+.airfreight-footer{
+  margin-top: 50rem;
+  z-index: 1;
+}
 
+.relative{
+  position: relative;
+}
+
+.airfreight-container-1{
+  width: 100%;
+  max-width: 1430px;
+  padding: 0 50px;
+  margin-top: -240px;
+}
+.header-block-rounded{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  height: 240px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -150px;
+}
+
+.inner-features{
+  padding-top: 75px;
+  margin-top: -240px;
+  text-align: center;
+}
+
+.text-div{
+  width: 66.666667%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-xxl {
+  font-size: 5rem;
+  line-height: 3.176rem;
+  font-weight: 700;
+}
+
+.main-text{
+  margin-top: 30px;
+  line-height: 1.647rem;
+  font-size: 1.117rem;
+}
 
 
 
