@@ -284,12 +284,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 1000;
   transition: var(--transition);
 }
 
 .header.active { 
-  background-color: hsl(202deg 81.43% 30.46%)
+  background-color: hsl(202deg 81.43% 30.46%);
+  z-index: 1000;
 }
 
 .header .container {
@@ -312,6 +313,14 @@ body {
   font-size: 35px;
 }
 
+.shipping-nav{
+  background-color: hsl(202deg 81.43% 30.46%);
+}
+
+.shipping-main{
+  margin-top: 15rem;
+}
+
 .nav-open-btn ion-icon { --ionicon-stroke-width: 40px; }
 
 .navbar {
@@ -323,7 +332,7 @@ body {
   height: 100%;
   background-color: var(--white);
   box-shadow: var(--shadow-1);
-  z-index: 3;
+  z-index: 1000;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
 }
@@ -332,6 +341,7 @@ body {
   visibility: visible;
   transform: translateX(300px);
   transition: 0.5s var(--cubic-out);
+  z-index: 1000;
 }
 
 .navbar-top {
@@ -340,14 +350,18 @@ body {
   align-items: center;
   border-block-end: 1px solid var(--plutinum);
   padding: 30px 20px;
+  z-index: 1000;
 }
 
 .navbar-top .logo {
   color: var(--onyx);
   font-size: 3rem;
+  z-index: 1000;
 }
 
-.nav-close-btn { font-size: 25px; }
+.nav-close-btn { 
+  font-size: 25px; 
+}
 
 .nav-close-btn ion-icon { --ionicon-stroke-width: 40px; }
 
@@ -969,9 +983,18 @@ border-radius: 25%;
   #ABOUT (LEARN MORE)
 \*-----------------------------------*/
 
+.air-main{
+  color: black;
+}
+
 .about_banner{
   min-height: 40vh;
 }
+
+.about-header{
+  z-index: 6;
+}
+
 .about-us-head-text{
   font-size: 7rem;
   color: whitesmoke;
@@ -1035,6 +1058,10 @@ border-radius: 25%;
   AIR FREIGHT
 \*-----------------------------------*/
 
+.airfreight-header.active {
+  background-color: hsl(202deg 81.43% 30.46%);
+}
+
 .airfreight-banner{
   height: 500px;
   height: 100%;
@@ -1052,11 +1079,28 @@ border-radius: 25%;
   position: relative;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.bg-black\/20 {
+  background-color: rgba(0,0,0,.2);
+  visibility: visible;
+  opacity: 1;
+}
+
+.inset-0 {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 .airfreight-container-1{
   width: 100%;
-  max-width: 1430px;
   padding: 0 50px;
   margin-top: -240px;
+  z-index: 5;
 }
 .header-block-rounded{
   --tw-bg-opacity: 1;
@@ -1065,8 +1109,8 @@ border-radius: 25%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: block;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10rem;
+  margin-right: 10rem;
   margin-top: -150px;
 }
 
@@ -1085,16 +1129,109 @@ border-radius: 25%;
 }
 
 .heading-xxl {
-  font-size: 5rem;
-  line-height: 3.176rem;
+  font-size: 4rem;
+  line-height: 3rem;
   font-weight: 700;
 }
 
 .main-text{
   margin-top: 30px;
-  line-height: 1.647rem;
-  font-size: 1.117rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
 }
+
+.article-wrapper{
+  position: relative;
+  z-index: 5;
+}
+
+.first-div{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 40px;
+}
+
+.levels-container{
+  text-align: left;
+  display: flex;
+  vertical-align: middle;
+}
+
+.air-text-heading{
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.647rem;
+}
+
+.air-levels{
+  width: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.air-express {
+  width: 33.3333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.article-wrapper .air-express-img{
+  opacity: 1;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.air-express-img{
+  height: 48px;
+  margin-right: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.air-text-header{
+  font-size: 1.5rem;
+  line-height: 1.47rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.air-text{
+  margin-top: 10px;
+  max-width: 24rem;
+}
+
+.second-div{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second-div div {
+  width: 83%;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.visibility-img {
+  width: 50%;
+  align-self: flex-start;
+  opacity: 1;
+  padding-right: 20px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
 
 
 

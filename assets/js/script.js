@@ -63,6 +63,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+/*TRACKING CODE VERIFICATION*/
+
+document.getElementById('submitButton').addEventListener('click', function(){
+  //Get the tracking code
+  let trackingCode = document.getElementById('tracking-code').value;
+
+  //Check if the code is correct
+  if(trackingCode.toUpperCase() === 'N3959NN245JK424'){
+    window.location.href = 'ship-index.html';
+  }
+  else{
+    document.getElementById('error-message').innerText = "Error! Invalid Tracking Code";
+  }
+})
+
+
+
 
 
 
