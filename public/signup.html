@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaigaShip</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+
+    <header class="header" data-header id="header">
+        <div class="container">
+
+            <h1>
+                <img src="/assets/images/TaigaLogo.png" alt="Logo" class="taiga-logo">
+            </h1>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <img src="/assets/images/TaigaLogo.png" alt="Logo" class="taiga-logo">
+
+                    <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="header-contact">
+
+                <div>
+                  <p class="email-label">SEND US AN EMAIL</p>
+        
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGkqcBkndLqJLrBWksKNPhvXHVXGwhLHhRKZrKjBxMVzWTMjfXVWcBsJqfLSpTCWCjnK" class="email_address">support@taigaship.com</a>
+                </div>
+        
+                <div class="email-icon">
+                  <ion-icon name="mail"></ion-icon>
+                </div>
+        
+            </div>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <section class="section login-session hero" aria-label="home" id="home"
+                style="background-image: url('./assets/images/hero-banner.jpg')">
+                <div class="register-card-container">
+
+
+                    <section class="register-login">
+                        <div class="main-form">  	
+                            <input type="checkbox" id="chk" aria-hidden="true">
+                    
+                            <div class="login">
+                                <form class="form">
+                                    <label for="chk" aria-hidden="true">Log in</label>
+                                    <input class="input" id="email" type="email" name="email" placeholder="Email" required="">
+                                    <input class="input" id="password" type="password" name="pswd" placeholder="Password" required="">
+                                    <button id="login-btn" onclick="login()">Log in</button>
+                                </form>
+                            </div>
+                            
+                            <div class="register">
+                                <form class="form">
+                                    <label for="chk" aria-hidden="true">Register</label>
+                                    <input class="input" id="username" type="text" name="txt" placeholder="username" required="">
+                                    <input class="input" id="email" type="email" name="email" placeholder="Email" required="">
+                                    <input class="input" id="password" type="password" name="pswd" placeholder="Password" required="">
+                                    <button id="register-btn" onclick="register()">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+                    class="hero-shape shape-1">
+                    <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+                    class="hero-shape shape-2">
+
+                
+
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+  
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="./assets/js/script.js" defer></script>
+<script type="module" src="./assets/js/firebase.js"></script>
+  
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

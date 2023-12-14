@@ -65,3 +65,4 @@ node_modules/
 # dotenv environment variables file
 .env
 firebase-tools-instant-win.exe
+public/assets/js/firebase.js

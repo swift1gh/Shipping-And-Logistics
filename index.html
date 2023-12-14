@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Prince Yekunya">
   <title>TaigaShip | Home</title>
 
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -12,8 +13,18 @@
   <link rel="stylesheet" href="/assets/css/mediaqueries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__en.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
 </head>
 
 <body id="top">
@@ -70,8 +81,27 @@
             </a>
           </li>
 
-
         </ul>
+
+
+
+
+        <div class="navbar-bottom">
+          <div class="nav-contact">
+
+            <div class="email-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <p class="email-label">SEND US AN EMAIL</p>
+    
+              <a id="contact-redirect" class="email_address">support@taigaship.com</a>
+            </div>
+        
+          </div>  
+        </div>
+
 
       </nav>
 
@@ -246,9 +276,7 @@
           <h2 class="h2 section-title">Trusted For Our Services</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
+            Customers have high expectations of your services. You want your customers to receive your products on the right time, in the right place, and in the right shape.
           </p>
 
           <ul class="service-list grid-list">
@@ -265,10 +293,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                  The best solution when you need a fast and efficient transport service. When time and speed matter, air freight can be the right answer.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="airfreight.html" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
                   <span class="span">View Detail</span>
@@ -290,10 +318,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                  Thanks to our global partner network, we deliver reliable road and rail services shipping from over 50 different countries where your goods are produced.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="road-and-rail.html" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
                   <span class="span">View Detail</span>
@@ -314,10 +342,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                  With suppliers spread worldwide and rising freight costs, you want to optimise your logistics spend and lead times. Together we will find the best sea freight solution for your specific situation.
                 </p>
 
-                <a href="#" class="btn-link">
+                <a href="ocean-freight.html" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
                   <span class="span">View Detail</span>
@@ -342,9 +370,7 @@
           <h2 class="h2 section-title">Featured Projects</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
+            Every customer expects a quick, reliable and high-quality service. Our core business is managing and running logistics: we optimise omnichannel logistics and deliver a seamless customer experience. Combining our knowledge of the retail landscape with our passion for logistics makes us the logistics expert you need.
           </p>
 
           <ul class="project-list">
@@ -365,10 +391,10 @@
                   <p class="card-tag">Warehousing , Distrbution</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
+                    <p class="card-title">Warehouse inventory</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</p>
                 </div>
 
               </div>
@@ -390,10 +416,10 @@
                   <p class="card-tag">Logistics, Analytics</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
+                    <p class="card-title">Minimize Manufacturing</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</p>
                 </div>
 
               </div>
@@ -415,10 +441,10 @@
                   <p class="card-tag">Warehousing , Distrbution</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
+                    <p class="card-title">Warehouse inventory</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</p>
                 </div>
 
               </div>
@@ -440,10 +466,10 @@
                   <p class="card-tag">Logistics, Analytics</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
+                    <p class="card-title">Minimize Manufacturing</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</p>
                 </div>
 
               </div>
@@ -465,10 +491,10 @@
                   <p class="card-tag">Warehousing , Distrbution</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
+                    <p class="card-title">Warehouse inventory</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</a>
                 </div>
 
               </div>
@@ -490,10 +516,10 @@
                   <p class="card-tag">Logistics, Analytics</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
+                    <p class="card-title">Minimize Manufacturing</p>
                   </h3>
 
-                  <a href="#" class="card-link">Read More</a>
+                  <p class="card-link">Read More</p>
                 </div>
 
               </div>
@@ -514,9 +540,7 @@
           <h2 class="h2 section-title">Recent news & events</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
+            We strive to understand your business needs to provide suitable and cutting-edge logistics solutions to help you further grow your business. We ensure that the promises you make to your customers are fully met every single day. Let's unlock the potential of your supply chain.
           </p>
 
           <ul class="blog-list grid-list">
@@ -537,23 +561,20 @@
                   </time>
 
                   <h3 class="h3 card-title">
-                    <a href="#">
-                      At the end of the day, going forward, a new normal that has evolved from. your only logistic
-                      partner.
-                    </a>
+                    <p>
+                      At the end of the day, the satisfaction of the customers matters to us most
+                    </p>
                   </h3>
 
                   <p class="card-text">
-                    New chip traps clusters of migrating tumor cells asperiortenetur, blanditiis odit. typesetting
-                    industry the standard
-                    dummy text ever since the when an printer.
+                    We take care of your logistics end to end: from the moment your products leave the supplier, safely to your customers' doorstep.
                   </p>
 
-                  <a href="#" class="btn-link">
+                  <p href="#" class="btn-link">
                     <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
                     <span class="span">Read More</span>
-                  </a>
+                  </p>
 
                 </div>
 
@@ -576,23 +597,21 @@
                   </time>
 
                   <h3 class="h3 card-title">
-                    <a href="#">
-                      Going forward, a new normal that has evolved from generation. moving your products across all
-                      borders.
-                    </a>
+                    <p>
+                      The logistics expert for omnichannel commerce
+                    </p>
                   </h3>
 
                   <p class="card-text">
-                    New chip traps clusters of migrating tumor cells asperiortenetur, blanditiis odit. typesetting
-                    industry the standard
-                    dummy text ever since the when an printer.
+                    You want to focus on your core business, so leave the logistics to us to provide the right-fit solutions.
+                    No matter how small or large your company is, we can manage your logistics today and in the years to come.
                   </p>
 
-                  <a href="#" class="btn-link">
+                  <p href="" class="btn-link">
                     <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
                     <span class="span">Read More</span>
-                  </a>
+                  </p>
 
                 </div>
 
@@ -635,7 +654,7 @@
 
 
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
 
       <div class="footer-top section">
@@ -702,23 +721,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Business Consulting</a>
+            <a href="#home" class="footer-link">Track Your Shipment</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Testimonials</a>
+            <a href="#footer" class="footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#header" class="footer-link">Track Your Shipment</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
+            <a href="#footer" class="footer-link">Terms & Condition</a>
           </li>
 
         </ul>
@@ -728,7 +739,10 @@
       <!--Copyright-->
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2022 TaigaShip. All Rights Reserved
+          &copy;2023 TaigaShip. All Rights Reserved.
+        </p>
+        <p>
+          <h6 style="text-align: center">Created by Prince Yekunya (princeyekunya523@gmail.com)</h6>
         </p>
       </div>
 
@@ -742,13 +756,6 @@
     <ion-icon name="chevron-up"></ion-icon>
   </a>
 
-
-
-  <!--Javascript Links-->
-  <script src="./assets/js/script.js" defer></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

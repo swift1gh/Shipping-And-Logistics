@@ -5,21 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaigaShip | Tracking</title>
+  <meta name="author" content="Prince Yekunya">
+  <title>TaigaShip | Track Your Shipment</title>
 
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/mediaqueries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </head>
 
 <body id="top">
 
-  <header class="header shipping-nav" data-header id="header">
+  <header class="header" data-header id="header">
+
+    <!--Navigation Bar-->
     <div class="container">
 
       <h1>
@@ -47,7 +53,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="index.html#about" class="navbar-link" data-nav-link>
+            <a href="#about" class="navbar-link" data-nav-link>
               <span>About</span>
 
               <ion-icon name="chevron-forward"></ion-icon>
@@ -55,7 +61,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="index.html#service" class="navbar-link" data-nav-link>
+            <a href="#service" class="navbar-link" data-nav-link>
               <span>Services</span>
 
               <ion-icon name="chevron-forward"></ion-icon>
@@ -63,15 +69,34 @@
           </li>
 
           <li class="navbar-item">
-            <a href="index.html#blog" class="navbar-link" data-nav-link>
+            <a href="#blog" class="navbar-link" data-nav-link>
               <span>Blog</span>
 
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
           </li>
 
-
         </ul>
+
+
+
+
+        <div class="navbar-bottom">
+          <div class="nav-contact">
+
+            <div class="email-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <p class="email-label">SEND US AN EMAIL</p>
+    
+              <a id="contact-redirect" class="email_address">support@taigaship.com</a>
+            </div>
+        
+          </div>  
+        </div>
+
 
       </nav>
 
@@ -107,39 +132,58 @@
 
       <section id="shipmentDetailsSection" class="shipment-details-section">
         <h3><b>Order id:</b> N3959NN245JK424</h3>
-        <h3>Delivery type: Freight 🛫</h3>
+        <h3>Delivery type: Air Freight 🛫</h3>
         <h3 class="head">Shipment Progress</h3>
 
         <div class="container">
           <ul>
-            <li>
-              <h3 class="heading">✅ Order Processed</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus totam </p>
 
-              <span class="date">January 2023</span>
+
+
+
+            <li>
+              <h3 class="heading">✅ Package Processed</h3>
+              <p>STATUS: Shipping Paid</p>
+
+              <span class="date">4th December 2023</span>
               <span class="circle">📦</span>
               </span>
             </li>
-            <li>
-              <h3 class="heading">✅Order Shipped</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus totam </p>
 
-              <span class="date">February 2023</span>
+
+
+
+            <li>
+              <h3 class="heading">✅Package Shipped</h3>
+              <p>LOCATION: US CUSTOMS (JFK) </p>
+              <p>STATUS: Undergoing Inspection And Examination </p>
+              <span class="date">4th December 2023</span>
               <span class="circle">🛫</span>
             </li>
-            <li>
-              <h3 class="heading">---- Order Enroute ----</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus totam </p>
 
-              <span class="date">November 2023</span>
+
+
+
+            <li>
+              <h3 class="heading">---- Pending Delivery ----</h3>
+              <p>TO: Thuan D Le</p>
+              <p>ADDRESS: 633 Ranchito Drive, Escondido CA, 92025, USA</p>
+              <span class="date">5th - 8th December 2023</span>
               <span class="circle">🚚</span>
             </li>
+
+
+
+
+
             <li>
-              <h3 class="heading">---- Order Arrived ----</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus totam </p>
-              <span class="date">December 2023</span>
+              <h3 class="heading">---- Pending ----</h3>
+              <p>No status</p>
+              <span class="date">...</span>
               <span class="circle">🏠</span>
             </li>
+
+
 
           </ul>
         </div>
@@ -250,7 +294,7 @@
 
           .shipment-details-section ul li .date {
             position: absolute;
-            width: 130px;
+            width: 180px;
             height: 33px;
             background-image: linear-gradient(to right, #ff8000, #ffae00);
             border-radius: 15px;
@@ -403,7 +447,7 @@
 
 
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
 
       <div class="footer-top section">
@@ -418,6 +462,7 @@
 
         </div>
 
+        <!--Footer Links-->
         <ul class="footer-list">
 
           <li>
@@ -425,15 +470,15 @@
           </li>
 
           <li>
-            <a href="#about" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">About</a>
           </li>
 
           <li>
-            <a href="#service" class="footer-link">Services</a>
+            <a href="index.html#service" class="footer-link">Services</a>
           </li>
 
           <li>
-            <a href="#blog" class="footer-link">Blog</a>
+            <a href="index.html#blog" class="footer-link">Blog</a>
           </li>
 
           <li>
@@ -449,23 +494,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Warehouse</a>
+            <a href="airfreight.html" class="footer-link">Air Freight</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Air Freight</a>
+            <a href="#footer" class="footer-link">Ocean Freight</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Ocean Freight</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Road Freight</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Packaging</a>
+            <a href="#footer" class="footer-link">Road & Rail Freight</a>
           </li>
 
         </ul>
@@ -477,34 +514,29 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Business Consulting</a>
+            <a href="index.htmlindex.html#home" class="footer-link">Track Your Shipment</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Testimonials</a>
+            <a href="#footer" class="footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#header" class="footer-link">Track Your Shipment</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
+            <a href="#footer" class="footer-link">Terms & Condition</a>
           </li>
 
         </ul>
 
-
       </div>
 
+      <!--Copyright-->
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2022 TaigaShip. All Rights Reserved
+          &copy;2023 TaigaShip. All Rights Reserved
         </p>
+        <p>
+          <h6 style="text-align: center">Created by Prince Yekunya (princeyekunya523@gmail.com)</h6>
+        </p>  
       </div>
 
     </div>

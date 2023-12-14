@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaigaShip | Home</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__en.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+</head>
+
+<body id="top">
+  <header class="header" data-header id="header">
+
+    <!--Navigation Bar-->
+    <div class="container">
+
+      <h1>
+        <img src="/assets/images/TaigaLogo.png" alt="Logo" class="taiga-logo">
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <img src="/assets/images/TaigaLogo.png" alt="Logo" class="taiga-logo">
+
+          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Services</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>
+              <span>Blog</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+
+
+
+        <div class="navbar-bottom">
+          <div class="nav-contact">
+
+            <div class="email-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <p class="email-label">SEND US AN EMAIL</p>
+    
+              <a id="contact-redirect" class="email_address">support@taigaship.com</a>
+            </div>
+        
+          </div>  
+        </div>
+
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+          <p class="email-label">SEND US AN EMAIL</p>
+
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGkqcBkndLqJLrBWksKNPhvXHVXGwhLHhRKZrKjBxMVzWTMjfXVWcBsJqfLSpTCWCjnK" class="email_address">support@taigaship.com</a>
+        </div>
+
+        <div class="email-icon">
+          <ion-icon name="mail"></ion-icon>
+        </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article>
+
+      <!--Home Section-->
+      <section class="section hero" aria-label="home" id="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span">To Every</span> Direction
+            </h2>
+
+            <p class="hero-text">
+              Easing your transportation of goods no matter the destination.
+            </p>
+
+
+            <!--Tracking Code-->
+            <input type="text" name="tracking_code" placeholder="Enter Tracking Code" aria-label="tracking_code" class="email-field" id="tracking-code">
+
+            <button class="btn" type="submit" class="newsletter-btn" id="submitButton">Track Now</button>
+            <p id="error-message" style="color: rgba(209, 8, 8, 0.87); margin-top: 2rem;"></p>
+
+
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-1">
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!--About Section-->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner img-holder" style="--width: 400; --height: 720;">
+            <img src="./assets/images/about-banner.jpg" width="400" height="720" loading="lazy" alt=""
+              class="img-cover">
+
+            <img src="./assets/images/about-shape-1.png" width="260" height="170" loading="lazy" alt=""
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/about-shape-2.png" width="500" height="500" loading="lazy" alt=""
+              class="abs-img abs-img-2">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Why Choose Us</p>
+
+            <h2 class="h2 section-title">We Are Professional Logistics & cargo Agency</h2>
+
+            <p class="section-text">
+              We are a leading logistics partner serving various clients, stretching from fast growing online-first retail brands up to well-established international players.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  Go beyond logistics, make the world go round and revolutionize business.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  Logistics through innovation, dedication, and technology. ready, set, done.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  We take pride in serving our customers safely. together with passion.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  Imagination what we can easily see is only a small percentage.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  Quality never goes out of style. safety, quality, professionalism.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  The quality shows in every move we make where business lives.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="about.html" class="btn">Learn More</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--Services Session-->
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle">All Services</p>
+
+          <h2 class="h2 section-title">Trusted For Our Services</h2>
+
+          <p class="section-text">
+            Customers have high expectations of your services. You want your customers to receive your products on the right time, in the right place, and in the right shape.
+          </p>
+
+          <ul class="service-list grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="80" height="60" loading="lazy" alt="Truck">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <span class="span">01</span> Air Freight
+                </h3>
+
+                <p class="card-text">
+                  The best solution when you need a fast and efficient transport service. When time and speed matter, air freight can be the right answer.
+                </p>
+
+                <a href="airfreight.html" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                  <span class="span">View Detail</span>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon card2">
+                  <img src="./assets/images/service-icon-4.png" width="50" height="60" loading="lazy" alt="Train">
+                  <img src="./assets/images/service-icon-1.png" width="74" height="60" loading="lazy" alt="Truck">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <span class="span">02</span> Rail & Road Freight
+                </h3>
+
+                <p class="card-text">
+                  Thanks to our global partner network, we deliver reliable road and rail services shipping from over 50 different countries where your goods are produced.
+                </p>
+
+                <a href="road-and-rail.html" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                  <span class="span">View Detail</span>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="60" height="60" loading="lazy" alt="Airplane">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <span class="span">03</span> Ocean Freight
+                </h3>
+
+                <p class="card-text">
+                  With suppliers spread worldwide and rising freight costs, you want to optimise your logistics spend and lead times. Together we will find the best sea freight solution for your specific situation.
+                </p>
+
+                <a href="ocean-freight.html" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                  <span class="span">View Detail</span>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!--Projects Session-->
+      <section class="section project" aria-label="project">
+        <div class="container">
+
+          <p class="section-subtitle">Projects</p>
+
+          <h2 class="h2 section-title">Featured Projects</h2>
+
+          <p class="section-text">
+            Every customer expects a quick, reliable and high-quality service. Our core business is managing and running logistics: we optimise omnichannel logistics and deliver a seamless customer experience. Combining our knowledge of the retail landscape with our passion for logistics makes us the logistics expert you need.
+          </p>
+
+          <ul class="project-list">
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-1.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Warehousing , Distrbution</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Warehouse inventory</p>
+                  </h3>
+
+                  <p class="card-link">Read More</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-2.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Logistics, Analytics</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Minimize Manufacturing</p>
+                  </h3>
+
+                  <p class="card-link">Read More</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-3.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Warehousing , Distrbution</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Warehouse inventory</p>
+                  </h3>
+
+                  <p class="card-link">Read More</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-4.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Logistics, Analytics</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Minimize Manufacturing</p>
+                  </h3>
+
+                  <p class="card-link">Read More</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-5.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Warehousing , Distrbution</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Warehouse inventory</p>
+                  </h3>
+
+                  <p class="card-link">Read More</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-6.jpg" width="397" height="352" loading="lazy"
+                    alt="Warehouse inventory" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Logistics, Analytics</p>
+
+                  <h3 class="h3">
+                    <p class="card-title">Minimize Manufacturing</p>
+                  </h3>
+
+                  <p class="card-link">Read More</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!--Blog Session-->
+      <section class="section blog" aria-label="blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our Blogs</p>
+
+          <h2 class="h2 section-title">Recent news & events</h2>
+
+          <p class="section-text">
+            We strive to understand your business needs to provide suitable and cutting-edge logistics solutions to help you further grow your business. We ensure that the promises you make to your customers are fully met every single day. Let's unlock the potential of your supply chain.
+          </p>
+
+          <ul class="blog-list grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                  <img src="./assets/images/blog-1.jpg" width="770" height="500" loading="lazy"
+                    alt="At the end of the day, going forward, a new normal that has evolved from. your only logistic partner."
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="card-meta" datetime="2022-08-02">
+                    <span class="span">02</span> Aug
+                  </time>
+
+                  <h3 class="h3 card-title">
+                    <p>
+                      At the end of the day, the satisfaction of the customers matters to us most
+                    </p>
+                  </h3>
+
+                  <p class="card-text">
+                    We take care of your logistics end to end: from the moment your products leave the supplier, safely to your customers' doorstep.
+                  </p>
+
+                  <p href="#" class="btn-link">
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                    <span class="span">Read More</span>
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                  <img src="./assets/images/blog-2.jpg" width="770" height="500" loading="lazy"
+                    alt="Going forward, a new normal that has evolved from generation. moving your products across all borders."
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="card-meta" datetime="2022-08-21">
+                    <span class="span">21</span> Aug
+                  </time>
+
+                  <h3 class="h3 card-title">
+                    <p>
+                      The logistics expert for omnichannel commerce
+                    </p>
+                  </h3>
+
+                  <p class="card-text">
+                    You want to focus on your core business, so leave the logistics to us to provide the right-fit solutions.
+                    No matter how small or large your company is, we can manage your logistics today and in the years to come.
+                  </p>
+
+                  <p href="" class="btn-link">
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                    <span class="span">Read More</span>
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!--Newsletter Session-->
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <figure class="newsletter-banner img-holder">
+            <img src="./assets/images/newsletter-banner.png" width="303" height="381" alt="newsletter banner"
+              class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <h2 class="h2 section-title">Subscribe for offers and news</h2>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Enter Your Email" aria-label="email"
+                class="email-field">
+
+              <button type="submit" class="newsletter-btn">Subscribe Now</button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <footer class="footer" id="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">TaigaShip</a>
+
+          <p class="footer-text">
+            A leading logistics partner for omnichannel commerce
+          </p>
+
+        </div>
+
+        <!--Footer Links-->
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGkqcBkndLqJLrBWksKNPhvXHVXGwhLHhRKZrKjBxMVzWTMjfXVWcBsJqfLSpTCWCjnK" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="airfreight.html" class="footer-link">Air Freight</a>
+          </li>
+
+          <li>
+            <a href="ocean-freight.html" class="footer-link">Ocean Freight</a>
+          </li>
+
+          <li>
+            <a href="road-and-rail.html" class="footer-link">Road & Rail Freight</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Community</p>
+          </li>
+
+          <li>
+            <a href="index.htmlindex.html#home" class="footer-link">Track Your Shipment</a>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!--Copyright-->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy;2023 TaigaShip. All Rights Reserved
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!--Back to top arrow-->
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+</body>
+
+
+</html>

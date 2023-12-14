@@ -84,6 +84,21 @@ document.getElementById('submitButton').addEventListener('click', function(){
 
 
 
+//Redirect to Gmail
+var contactButton = document.getElementById('contact-redirect'); 
+contactButton.addEventListener('click', function () {
+  var emailAddress = 'support@taigaship.com';
+  var mailtoLink = 'mailto:' + emailAddress;
+  window.location.href = mailtoLink;
+//  window.open(mailtoLink, '_blank');
+
+  // For mobile devices, you may need to use window.location.href instead
+  // window.location.href = mailtoLink;
+});
+
+
+
+
 
 
 

@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaigaShip - Home</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Prince Yekunya">
+  <title>TaigaShip | Road & Rail Freight</title>
 
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/mediaqueries.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-  </head>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__en.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+</head>
 
 
 
@@ -41,7 +52,7 @@
           <ul class="navbar-list">
   
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>
+              <a href="index.html" class="navbar-link" data-nav-link>
                 <span>Home</span>
   
                 <ion-icon name="chevron-forward"></ion-icon>
@@ -72,8 +83,27 @@
               </a>
             </li>
   
-  
           </ul>
+  
+  
+  
+  
+          <div class="navbar-bottom">
+            <div class="nav-contact">
+  
+              <div class="email-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+  
+              <div>
+                <p class="email-label">SEND US AN EMAIL</p>
+      
+                <a id="contact-redirect" class="email_address">support@taigaship.com</a>
+              </div>
+          
+            </div>  
+          </div>
+  
   
         </nav>
   
@@ -99,14 +129,111 @@
   
       </div>
     </header>
+      
+
+    <main class="air-main">
+      <div class="relative">
+        <div class="airfreight-banner">
+          <img src="/assets/images/Road-And-Rail-Banner.png" alt="Airplane" class="airfreight-banner-img">
+        </div>  
+
+        <!--Blur background-->
+        <div class="overlay absolute inset-0 bg-black/20"></div>
+        <!---->
+      </div>
 
 
-    <main></main>
+      <div class="airfreight-container-1 relative">
+        <div class="header-block-rounded">
+        <div class="inner-features">
+          <div class="text-div">
+            <h1 class="heading heading-xxl">Our Road and Rail solutions</h1>
+                    
+            <div class="intro main-text">
+              <p>Thanks to our global partner network, we deliver reliable road and rail services shipping from over 50 different countries where your goods are produced.
+              <p>                            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article class="article-wrapper">
+        <div class="first-div">
+          <div class="levels-container">
+            <div class="air-text-heading">Different road solutions fitting your needs</div>
+
+            <div class="air-levels">
+
+              <div class="air-express">
+                <img src="/assets/images/Icons-in-SVG2_Full-Truck-Load.svg" alt="Air Express" class="air-express-img">
+
+                <p class="air-text">Full Truck Load (FTL)</p>
+              </div>
+
+
+              <div class="air-express">
+                <img src="/assets/images/Icons-in-SVG2_Less-than-Truck-Load.svg" alt="Air Express" class="air-express-img">
+
+                <p class="air-text">Less than Truck Load (LTL)</p>
+              </div>
+
+
+              <div class="air-express">
+                <img src="/assets/images/Icons-in-SVG2_International-Fast-Truck-and-Slow-Truck-services.svg" alt="Air Express" class="air-express-img">
+
+                <p class="air-text">International Fast Truck services</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="second-div">
+          <div class="side-img">
+            <img src="/assets/images/Road-Transport-FF_result.png" alt="Harry" class="harry-img">
+          </div>
+
+          <div class="side-text">
+            <h3>Road Transport</h3>
+            <div class="mt">
+              <p>
+                With the help of our road partners network, we always find the right fit solution to deliver your products from numerous origins to destinations. We run several trade lanes from multiple European and near-shoring production countries like Turkey, Italy and Portugal. We provide door-to-door services with regular schedules and daily departures, combined with other modes of transport.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="third-div">
+
+          <div class="side-img img-right">
+            <img src="/assets/images/Rail-Transport.webp" alt="Consolidation" class="consolidation">
+          </div>
+
+
+          <div class="side-text text-left">
+            <h3>Rail Transport</h3>
+            <div class="mt">
+              <p>
+                Cheaper than air freight, faster than sea freight and more sustainable than both. Rail transport might be an excellent alternative for your transport within Europe and between China and Europe. We can arrange inland rail service to various distribution points, or countries and our rail service can easily be combined with other modes of transport, at both origin and destination. Like different modes of transportation, we provide complete visibility during transportation and milestone tracking.
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+        
+      </article>
+    </main>
   </body>
 
 
-  
-  <footer class="footer">
+
+  <footer class="footer" id="footer">
     <div class="container">
 
       <div class="footer-top section">
@@ -153,23 +280,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Warehouse</a>
+            <a href="airfreight.html" class="footer-link">Air Freight</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Air Freight</a>
+            <a href="ocean-freight.html" class="footer-link">Ocean Freight</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Ocean Freight</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Road Freight</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Packaging</a>
+            <a href="road-and-rail.html" class="footer-link">Road & Rail Freight</a>
           </li>
 
         </ul>
@@ -181,23 +300,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Business Consulting</a>
+            <a href="index.htmlindex.html#home" class="footer-link">Track Your Shipment</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Testimonials</a>
+            <a href="#footer" class="footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#header" class="footer-link">Track Your Shipment</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
+            <a href="#footer" class="footer-link">Terms & Condition</a>
           </li>
 
         </ul>
@@ -207,8 +318,11 @@
       <!--Copyright-->
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2022 TaigaShip. All Rights Reserved
+          &copy;2023 TaigaShip. All Rights Reserved
         </p>
+        <p>
+          <h6 style="text-align: center">Created by Prince Yekunya (princeyekunya523@gmail.com)</h6>
+        </p>  
       </div>
 
     </div>

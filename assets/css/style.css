@@ -132,6 +132,9 @@ body {
   color: var(--onyx);
   font-size: 1.6rem;
   line-height: 1.7;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -277,7 +280,9 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.header-contact { display: none; }
+.header-contact {
+   display: none; 
+}
 
 .header {
   position: fixed;
@@ -300,7 +305,7 @@ body {
   gap: 30px;
 }
 .taiga-logo{
-  height: 15rem;
+  height: 10rem;
 }
 .logo {
   font-family: var(--ff-oswald);
@@ -357,6 +362,16 @@ body {
   color: var(--onyx);
   font-size: 3rem;
   z-index: 1000;
+}
+
+.navbar-bottom {
+  display: block;
+  margin-top: 10vh;
+  padding: 2rem;
+}
+
+.navbar-bottom .nav-contact{
+  display: block;
 }
 
 .nav-close-btn { 
@@ -1063,15 +1078,20 @@ border-radius: 25%;
 }
 
 .airfreight-banner{
-  height: 500px;
-  height: 100%;
+  max-height: 660px;
   background-position: 50%;
   background-size: cover;
   object-fit: cover;
+  max-width: 100%;
+}
+
+.airfreight-banner-img{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .airfreight-footer{
-  margin-top: 50rem;
   z-index: 1;
 }
 
@@ -1098,26 +1118,26 @@ border-radius: 25%;
 
 .airfreight-container-1{
   width: 100%;
-  padding: 0 50px;
-  margin-top: -240px;
+  padding: 0 180px;
+  margin-top: 100px;
   z-index: 5;
 }
 .header-block-rounded{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255/var(--tw-bg-opacity));
-  height: 240px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: block;
   margin-left: 10rem;
   margin-right: 10rem;
-  margin-top: -150px;
+  margin-top: 35px;
 }
 
 .inner-features{
   padding-top: 75px;
   margin-top: -240px;
   text-align: center;
+  padding-bottom: 8rem;
 }
 
 .text-div{
@@ -1137,18 +1157,18 @@ border-radius: 25%;
 .main-text{
   margin-top: 30px;
   line-height: 2.5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .article-wrapper{
   position: relative;
   z-index: 5;
+  padding: 0 5rem;
 }
 
 .first-div{
-  margin-top: 100px;
+  margin-top: 45px;
   margin-bottom: 100px;
-  padding: 0 40px;
 }
 
 .levels-container{
@@ -1210,31 +1230,77 @@ border-radius: 25%;
   max-width: 1430px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  padding: 0 5rem;
+  max-width: 100rem;
 }
 
-.second-div div {
-  width: 83%;
-  display: flex;
+.side-img {
+  width: 50%;
   padding-left: 0;
   padding-right: 0;
 }
 
-.visibility-img {
-  width: 50%;
-  align-self: flex-start;
+.harry-img {
+  width: 100%;
   opacity: 1;
-  padding-right: 20px;
   height: auto;
   object-fit: cover;
 }
 
+.side-text{
+  width: 50%;
+  padding-left: 5rem;
+  vertical-align: middle;
+}
+
+.side-text h3 {
+  font-size: 3rem;
+}
+
+.mt p{
+  padding-top: 2rem;
+}
 
 
+.third-div{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 0 5rem;
+  max-width: 100rem;
+  flex-direction: row-reverse;
+}
 
+.text-left{
+  padding-left: 0;
+  vertical-align: middle;
+}
 
+.img-right{
+  padding-left: 5rem;
+}
 
+.consolidation {
+  width: 110%;
+  opacity: 1;
+  height: auto;
+  object-fit: cover;
+}
 
-
+.forth-div{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 0 5rem;
+  max-width: 100rem;
+}
 
 
 

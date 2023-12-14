@@ -201,7 +201,7 @@
     .grid-list { grid-template-columns: repeat(3, 1fr); }
   
     
-    .nav-open-btn,
+    .nav-open-btn, .navbar-bottom,
     .navbar-top,
     .navbar-link > ion-icon { display: none; }
   
@@ -358,6 +358,229 @@
     left: -20px;
   }
 }
+
+
+/* ABOUT PAGE */
+@media screen and (max-width: 768px){
+  .taiga-logo {
+    height: 8.5rem;
+  }
+  .about-us-head-text {
+    font-size: 5rem;
+  }
+  .about_banner {
+    min-height: 30vh;
+  }
+  .about-text-1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .about-text-1 div h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .about-text-2 {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 540px){
+  .about-text-2{
+    gap: 2rem;
+  }
+  .about-up {
+    flex-direction: column;
+  }
+  .about-down {
+    margin: 0;
+    padding: 2rem;
+  }
+  .about-left {
+    padding: 2rem;
+  }
+  .about-right {
+    padding: 2rem;
+  }
+  body{
+    line-height: 1.2;
+  }
+}
+
+
+
+/* AIR FREIGHT */
+@media screen and (max-width: 1440px ) {
+  .airfreight-banner{
+    height: 350px;
+  }
+  .header-block-rounded{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .inner-features{
+    padding-bottom: 2rem;
+  }
+  .heading-xxl{
+    font-size: 3.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-block-rounded{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .airfreight-banner {
+    height: 300px;
+  }
+  .inner-features{
+    padding-bottom: 1rem;
+  }
+  .heading-xxl{
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+  .airfreight-container-1{
+    padding: 0 60px;
+  }
+  .side-text h3 {
+    font-size: 2.8rem;
+  }
+  .article-wrapper{
+    padding: 0;
+    margin: 0 -3rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .airfreight-banner{
+    height: 25vh;
+  }
+  .header-block-rounded{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .inner-features{
+    padding-bottom: 1rem;
+    margin-top: 40px;
+    padding-top: 0px;
+  }
+  .main-text{
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+  .levels-container{
+    flex-direction: column;
+  }
+  .air-text-heading{
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
+  .heading-xxl{
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+  .airfreight-container-1{
+    padding: 0 60px;
+    margin-top: 50px;
+  }
+  .side-text{
+    width: auto;
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+  .side-img{
+    width: 100%;
+  }
+  .side-text h3 {
+    font-size: 2.2rem;
+  }
+  .air-levels {
+    width: 100%;
+  }
+  .first-div{
+    margin-top: 50px;
+    padding: 0 3rem;
+  }
+  .second-div{
+    flex-direction: column;
+  }
+  .third-div {
+    flex-direction: column;
+  }
+  .forth-div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .airfreight-banner {
+    height: 15vh;
+  }
+  .airfreight-container-1 {
+    padding: 0;
+  }
+  .text-div{
+    width: 100%;
+  }
+  .main-text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .air-main{
+    font-size: 1.2rem;
+  }
+  .heading-xxl{
+    font-size: 2.2rem;
+  }
+  .side-text h3 {
+    font-size: 2.1rem;
+  }
+  .footer{
+    font-size: 1.3rem;
+  }
+  .article-wrapper{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .article-wrapper{
+    margin: 0 1rem;
+  }
+  .first-div {
+    margin-top: 120px;
+  }
+  .heading-xxl {
+    font-size: 1.8rem;
+  }
+  .air-text-heading{
+    font-size: 1.6rem;
+  }
+  .air-text-header{
+    font-size: 1.3rem;
+  }
+  .second-div{
+    padding: 0 1rem;
+  }
+  .third-div{
+    padding: 0 1rem;
+  }
+  .forth-div{
+    padding: 0 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
